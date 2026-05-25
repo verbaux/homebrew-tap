@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "Git worktree manager that handles the setup work"
   homepage "https://github.com/verbaux/grove"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/verbaux/grove/releases/download/v0.7.0/grove_0.7.0_darwin_amd64.tar.gz"
-      sha256 "3c59f70342420fd71843f62a9a133172d7b6be16b424525ba23fdf28cccf3e67"
+      url "https://github.com/verbaux/grove/releases/download/v0.7.1/grove_0.7.1_darwin_amd64.tar.gz"
+      sha256 "31c94577b1d54738b570e687b4dcd350af12bf685ff7319d6fc6cb889717a3ce"
 
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/verbaux/grove/releases/download/v0.7.0/grove_0.7.0_darwin_arm64.tar.gz"
-      sha256 "0cd3d562068a98b130acc396acec854af47fc7ba027666f49ddccd6c713f831c"
+      url "https://github.com/verbaux/grove/releases/download/v0.7.1/grove_0.7.1_darwin_arm64.tar.gz"
+      sha256 "b6b4619b9682ccf075a66937469da7e1450eaf770f425e125ce4b6d75001f963"
 
       define_method(:install) do
         bin.install "grove"
@@ -29,15 +29,15 @@ class Grove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verbaux/grove/releases/download/v0.7.0/grove_0.7.0_linux_amd64.tar.gz"
-      sha256 "208f98c9631b731c36c0d1d0a9bbc6e097e70771b5f3d4d0373ade2409b7044a"
+      url "https://github.com/verbaux/grove/releases/download/v0.7.1/grove_0.7.1_linux_amd64.tar.gz"
+      sha256 "6f37f6e895f876e8f43f7e145953c5980d8d6e133ef58b29389f0ea59573d3b8"
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verbaux/grove/releases/download/v0.7.0/grove_0.7.0_linux_arm64.tar.gz"
-      sha256 "90dd83f7ddb904565220e427413eadde90a4bce795c113bad4766ceb3e02bfd4"
+      url "https://github.com/verbaux/grove/releases/download/v0.7.1/grove_0.7.1_linux_arm64.tar.gz"
+      sha256 "4705340c84f39ae28f55b4227b978ae37293dea6275ae9575c87c0fd6ec824ab"
       define_method(:install) do
         bin.install "grove"
       end
