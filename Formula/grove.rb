@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "Git worktree manager that handles the setup work"
   homepage "https://github.com/verbaux/grove"
-  version "0.11.1"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/verbaux/grove/releases/download/v0.11.1/grove_0.11.1_darwin_amd64.tar.gz"
-      sha256 "879ff3f3323639d58d3b79269b06d265a0a52379d4e1a8f754c0336c7a4922cf"
+      url "https://github.com/verbaux/grove/releases/download/v0.12.0/grove_0.12.0_darwin_amd64.tar.gz"
+      sha256 "64f0b8d225f71079eed274290f9f6aa2d2460f2fbcc4311f02b5ff5717e9e962"
 
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/verbaux/grove/releases/download/v0.11.1/grove_0.11.1_darwin_arm64.tar.gz"
-      sha256 "788f54932af8f014fe8a597608c37e245b49b70809755ce78d44088cf8c59c8a"
+      url "https://github.com/verbaux/grove/releases/download/v0.12.0/grove_0.12.0_darwin_arm64.tar.gz"
+      sha256 "19011bcc92d27583b30628cd01133166445334c8c5d734139632800e067fa44a"
 
       define_method(:install) do
         bin.install "grove"
@@ -29,15 +29,15 @@ class Grove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verbaux/grove/releases/download/v0.11.1/grove_0.11.1_linux_amd64.tar.gz"
-      sha256 "59d824d584fe770fce4f12af34d0b5028b0935d4b3c19dafb1049c824981ac21"
+      url "https://github.com/verbaux/grove/releases/download/v0.12.0/grove_0.12.0_linux_amd64.tar.gz"
+      sha256 "1cf756c003b8bf9320179a61b2dcb2f5c604053c163362e4dc3d14cc7d7aa079"
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verbaux/grove/releases/download/v0.11.1/grove_0.11.1_linux_arm64.tar.gz"
-      sha256 "8206d9b5691ecf9a82fa074edc7f3e65534a70d0ae391aaccbde3f2b96353daa"
+      url "https://github.com/verbaux/grove/releases/download/v0.12.0/grove_0.12.0_linux_arm64.tar.gz"
+      sha256 "7f2c20d011c6a74ccdc4b354eb9ddf008e1d1e1579839eb39eabc73b06b1fab8"
       define_method(:install) do
         bin.install "grove"
       end
